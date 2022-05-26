@@ -1,6 +1,4 @@
 package com.ssd.springpetclinic.services;
-import java.util.*;
-import org.springframework.data.repository.CrudRepository;
 import java.util.Set;
 
 public interface CrudService<T,ID>  {
