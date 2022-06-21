@@ -11,6 +11,7 @@
     <artifactId>pet-clinic-web</artifactId>
 
     <properties>
+        <junit-platform.version>1.1.0</junit-platform.version>
         <!-- Web dependencies -->
         <webjars-bootstrap.version>3.3.6</webjars-bootstrap.version>
         <webjars-jquery-ui.version>1.11.4</webjars-jquery-ui.version>
@@ -130,6 +131,18 @@
                         <groupId>org.mockito</groupId>
                         <artifactId>mockito-core</artifactId>
                         <version>2.23.0</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.junit.platform</groupId>
+                        <artifactId>junit-platform-surefire-provider</artifactId>
+                        <version>${junit-platform.version}</version>
                     </dependency>
                 </dependencies>
             </plugin>
